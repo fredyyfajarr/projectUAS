@@ -8,9 +8,10 @@ Tutorial instalasi
 7. Dan aplikasi sudah terinstall
 
 demo account: 
+
 <b>ADMIN</b>
 uname: admin
-password: admim
+password: admin
 
 <b>USER</b>
 uname: user
