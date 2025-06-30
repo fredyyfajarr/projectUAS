@@ -6,3 +6,12 @@ Tutorial instalasi
 5. Pada folder ProjectUAS_DFFFP, masuk ke folder Waroeng DFFFP-SetupFiles
 6. Selanjutnya, install Waroeng DFFFP, di next saja sampai selesai instalasi
 7. Dan aplikasi sudah terinstall
+
+demo account: 
+<b>ADMIN</b>
+uname: admin
+password: admim
+
+<b>USER</b>
+uname: user
+password: user
