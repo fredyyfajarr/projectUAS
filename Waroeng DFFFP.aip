@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.7" version="22.7" Modules="enterprise" RootPath="." Language="en" Id="{14EF360F-A2D6-4F99-B8CA-226D6FEBD6CA}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="Universitas Pamulang"/>
+    <ROW Property="ProductCode" Value="1033:{5BB1748D-C1D7-42B2-89E4-C1474911D9DC} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Waroeng DFFFP"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{1D57CFD9-CEFE-4E7F-8D4B-88D5C3BD3D7A}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="Admin_2_Dir" Directory_Parent="src_Dir" DefaultDir="Admin" DirectoryOptions="3"/>
+    <ROW Directory="Admin_Dir" Directory_Parent="classes_Dir" DefaultDir="Admin" DirectoryOptions="3"/>
+    <ROW Directory="Auth_2_Dir" Directory_Parent="src_Dir" DefaultDir="Auth" DirectoryOptions="3"/>
+    <ROW Directory="Auth_Dir" Directory_Parent="classes_Dir" DefaultDir="Auth" DirectoryOptions="3"/>
+    <ROW Directory="DB_Conn_2_Dir" Directory_Parent="src_Dir" DefaultDir="DB_Conn" DirectoryOptions="3"/>
+    <ROW Directory="DB_Conn_Dir" Directory_Parent="classes_Dir" DefaultDir="DB_Conn" DirectoryOptions="3"/>
+    <ROW Directory="Dashboard_2_Dir" Directory_Parent="src_Dir" DefaultDir="DASHBO~1|Dashboard" DirectoryOptions="3"/>
+    <ROW Directory="Dashboard_Dir" Directory_Parent="classes_Dir" DefaultDir="DASHBO~1|Dashboard" DirectoryOptions="3"/>
+    <ROW Directory="ProjectUAS_DFFFP_Dir" Directory_Parent="APPDIR" DefaultDir="PROJEC~1|ProjectUAS_DFFFP" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="User_2_Dir" Directory_Parent="src_Dir" DefaultDir="User" DirectoryOptions="3"/>
+    <ROW Directory="User_Dir" Directory_Parent="classes_Dir" DefaultDir="User" DirectoryOptions="3"/>
+    <ROW Directory="build_Dir" Directory_Parent="ProjectUAS_DFFFP_Dir" DefaultDir="build" DirectoryOptions="3"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes" DirectoryOptions="3"/>
+    <ROW Directory="dist_Dir" Directory_Parent="ProjectUAS_DFFFP_Dir" DefaultDir="dist" DirectoryOptions="3"/>
+    <ROW Directory="img_2_Dir" Directory_Parent="src_Dir" DefaultDir="img" DirectoryOptions="3"/>
+    <ROW Directory="img_Dir" Directory_Parent="classes_Dir" DefaultDir="img" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="ProjectUAS_DFFFP_Dir" DefaultDir="NBPROJ~1|nbproject" DirectoryOptions="3"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private" DirectoryOptions="3"/>
+    <ROW Directory="projectuas_dfffm_2_Dir" Directory_Parent="src_Dir" DefaultDir="PROJEC~1|projectuas_dfffm" DirectoryOptions="3"/>
+    <ROW Directory="projectuas_dfffm_Dir" Directory_Parent="classes_Dir" DefaultDir="PROJEC~1|projectuas_dfffm" DirectoryOptions="3"/>
+    <ROW Directory="src_Dir" Directory_Parent="ProjectUAS_DFFFP_Dir" DefaultDir="src" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{B96525FE-B790-433C-9C78-AD931A6A9D81}"/>
+    <ROW Component="ProductInformation" Value="{69A5AAD1-6321-463A-88D0-7D003AFCB002}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{B96525FE-B790-433C-9C78-AD931A6A9D81}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AbsoluteLayout.jar" ComponentId="{9F82143A-FEB7-4645-8156-90C812257691}" Directory_="lib_Dir" Attributes="0" KeyPath="AbsoluteLayout.jar" Type="0"/>
+    <ROW Component="Add_menu.form" ComponentId="{88B7B91F-886C-483D-865C-5A31DE9209FC}" Directory_="Admin_2_Dir" Attributes="0" KeyPath="Add_menu.form" Type="0"/>
+    <ROW Component="Add_menu1.class" ComponentId="{789FC482-11D2-4C52-966E-1976CFDE32A5}" Directory_="Admin_Dir" Attributes="0" KeyPath="Add_menu1.class" Type="0"/>
+    <ROW Component="Dashboard.form" ComponentId="{34BCCD60-48FC-41FB-9F13-4B8AE758C902}" Directory_="Dashboard_2_Dir" Attributes="0" KeyPath="Dashboard.form" Type="0"/>
+    <ROW Component="Dashboard1.class" ComponentId="{AE94C782-E433-4205-B1F7-87E1D4F7191C}" Directory_="Dashboard_Dir" Attributes="0" KeyPath="Dashboard1.class" Type="0"/>
+    <ROW Component="DatabaseConnection.class" ComponentId="{C48B4105-1550-4C10-B40E-546D6563254B}" Directory_="DB_Conn_Dir" Attributes="0" KeyPath="DatabaseConnection.class" Type="0"/>
+    <ROW Component="DatabaseConnection.java" ComponentId="{0EAC5181-8250-4661-B8FB-B8A4159BEAAB}" Directory_="DB_Conn_2_Dir" Attributes="0" KeyPath="DatabaseConnection.java" Type="0"/>
+    <ROW Component="List_menu.form" ComponentId="{F05E7A1B-CD99-42BA-BE06-F3097903DB1F}" Directory_="User_2_Dir" Attributes="0" KeyPath="List_menu.form" Type="0"/>
+    <ROW Component="List_menu1.class" ComponentId="{2B62CC55-62C6-4395-A1DC-57BB263033E8}" Directory_="User_Dir" Attributes="0" KeyPath="List_menu1.class" Type="0"/>
+    <ROW Component="Login_form.form" ComponentId="{95C08F59-82F4-4803-AA57-353989748761}" Directory_="Auth_2_Dir" Attributes="0" KeyPath="Login_form.form" Type="0"/>
+    <ROW Component="Login_form1.class" ComponentId="{1F4D30A8-D834-4DD2-A49B-9D0EA695D7D5}" Directory_="Auth_Dir" Attributes="0" KeyPath="Login_form1.class" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{69A5AAD1-6321-463A-88D0-7D003AFCB002}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="ProjectUAS_DFFFM.class" ComponentId="{5CC1B6B1-6DEC-43AF-9437-C991BA1B4140}" Directory_="projectuas_dfffm_Dir" Attributes="0" KeyPath="ProjectUAS_DFFFM.class" Type="0"/>
+    <ROW Component="ProjectUAS_DFFFM.java" ComponentId="{B91D762A-45A3-4D6C-8FCE-748344CAACA6}" Directory_="projectuas_dfffm_2_Dir" Attributes="0" KeyPath="ProjectUAS_DFFFM.java" Type="0"/>
+    <ROW Component="ProjectUAS_DFFFP.jar" ComponentId="{8279CA4F-4A54-4246-BF77-181DDFA38181}" Directory_="dist_Dir" Attributes="0" KeyPath="ProjectUAS_DFFFP.jar" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{70914F76-9359-4E25-A2B2-AE461B2FA40A}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="admin.png" ComponentId="{968B1DA9-50A3-4F2A-ADBB-1BE9DD488896}" Directory_="img_Dir" Attributes="0" KeyPath="admin.png" Type="0"/>
+    <ROW Component="admin.png_2" ComponentId="{CAC2F58C-C642-4EC2-ABE1-B8E7CC93BE22}" Directory_="img_2_Dir" Attributes="0" KeyPath="admin.png_2" Type="0"/>
+    <ROW Component="build.xml" ComponentId="{7D168309-2790-4558-8E3A-19FDF9606F78}" Directory_="ProjectUAS_DFFFP_Dir" Attributes="0" KeyPath="build.xml" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{4784596D-7E85-44A5-B274-D8CACCBBD828}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{C0F39519-0DBE-4E8F-943E-3222938CF67B}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="demo.exe" ComponentId="{07B9FFC2-A7BE-4774-A2B8-14B0CF32B6AC}" Directory_="APPDIR" Attributes="0" KeyPath="demo.exe"/>
+    <ROW Component="private.properties" ComponentId="{9DD72CE1-4828-42C2-BA84-D4150ED576AA}" Directory_="private_Dir" Attributes="0" KeyPath="private.properties" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\built-jar.properties" SelfReg="false"/>
+    <ROW File="Add_menu1.class" Component_="Add_menu1.class" FileName="ADD_ME~1.CLA|Add_menu$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Add_menu$1.class" SelfReg="false"/>
+    <ROW File="Add_menu2.class" Component_="Add_menu1.class" FileName="ADD_ME~2.CLA|Add_menu$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Add_menu$2.class" SelfReg="false"/>
+    <ROW File="Add_menu3.class" Component_="Add_menu1.class" FileName="ADD_ME~3.CLA|Add_menu$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Add_menu$3.class" SelfReg="false"/>
+    <ROW File="Add_menu.class" Component_="Add_menu1.class" FileName="ADD_ME~4.CLA|Add_menu.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Add_menu.class" SelfReg="false"/>
+    <ROW File="List_menu_admin1.class" Component_="Add_menu1.class" FileName="LIST_M~1.CLA|List_menu_admin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$1.class" SelfReg="false"/>
+    <ROW File="List_menu_admin2.class" Component_="Add_menu1.class" FileName="LIST_M~2.CLA|List_menu_admin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$2.class" SelfReg="false"/>
+    <ROW File="List_menu_admin3.class" Component_="Add_menu1.class" FileName="LIST_M~3.CLA|List_menu_admin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$3.class" SelfReg="false"/>
+    <ROW File="List_menu_admin4.class" Component_="Add_menu1.class" FileName="LIST_M~4.CLA|List_menu_admin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$4.class" SelfReg="false"/>
+    <ROW File="List_menu_admin5.class" Component_="Add_menu1.class" FileName="LIST_M~5.CLA|List_menu_admin$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$5.class" SelfReg="false"/>
+    <ROW File="List_menu_admin6.class" Component_="Add_menu1.class" FileName="LIST_M~6.CLA|List_menu_admin$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$6.class" SelfReg="false"/>
+    <ROW File="List_menu_admin7.class" Component_="Add_menu1.class" FileName="LIST_M~7.CLA|List_menu_admin$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$7.class" SelfReg="false"/>
+    <ROW File="List_menu_admin8.class" Component_="Add_menu1.class" FileName="LIST_M~8.CLA|List_menu_admin$8.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$8.class" SelfReg="false"/>
+    <ROW File="List_menu_admin9.class" Component_="Add_menu1.class" FileName="LIST_M~9.CLA|List_menu_admin$9.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin$9.class" SelfReg="false"/>
+    <ROW File="List_menu_admin.class" Component_="Add_menu1.class" FileName="LIST_~10.CLA|List_menu_admin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\List_menu_admin.class" SelfReg="false"/>
+    <ROW File="Orders_detail1.class" Component_="Add_menu1.class" FileName="ORDERS~1.CLA|Orders_detail$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Orders_detail$1.class" SelfReg="false"/>
+    <ROW File="Orders_detail2.class" Component_="Add_menu1.class" FileName="ORDERS~2.CLA|Orders_detail$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Orders_detail$2.class" SelfReg="false"/>
+    <ROW File="Orders_detail3.class" Component_="Add_menu1.class" FileName="ORDERS~3.CLA|Orders_detail$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Orders_detail$3.class" SelfReg="false"/>
+    <ROW File="Orders_detail.class" Component_="Add_menu1.class" FileName="ORDERS~4.CLA|Orders_detail.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Orders_detail.class" SelfReg="false"/>
+    <ROW File="Update_menu1.class" Component_="Add_menu1.class" FileName="UPDATE~1.CLA|Update_menu$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Update_menu$1.class" SelfReg="false"/>
+    <ROW File="Update_menu2.class" Component_="Add_menu1.class" FileName="UPDATE~2.CLA|Update_menu$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Update_menu$2.class" SelfReg="false"/>
+    <ROW File="Update_menu3.class" Component_="Add_menu1.class" FileName="UPDATE~3.CLA|Update_menu$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Update_menu$3.class" SelfReg="false"/>
+    <ROW File="Update_menu.class" Component_="Add_menu1.class" FileName="UPDATE~4.CLA|Update_menu.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Admin\Update_menu.class" SelfReg="false"/>
+    <ROW File="Login_form1.class" Component_="Login_form1.class" FileName="LOGIN_~1.CLA|Login_form$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Login_form$1.class" SelfReg="false"/>
+    <ROW File="Login_form2.class" Component_="Login_form1.class" FileName="LOGIN_~2.CLA|Login_form$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Login_form$2.class" SelfReg="false"/>
+    <ROW File="Login_form3.class" Component_="Login_form1.class" FileName="LOGIN_~3.CLA|Login_form$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Login_form$3.class" SelfReg="false"/>
+    <ROW File="Login_form4.class" Component_="Login_form1.class" FileName="LOGIN_~4.CLA|Login_form$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Login_form$4.class" SelfReg="false"/>
+    <ROW File="Login_form.class" Component_="Login_form1.class" FileName="LOGIN_~5.CLA|Login_form.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Login_form.class" SelfReg="false"/>
+    <ROW File="Register_form1.class" Component_="Login_form1.class" FileName="REGIST~1.CLA|Register_form$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Register_form$1.class" SelfReg="false"/>
+    <ROW File="Register_form2.class" Component_="Login_form1.class" FileName="REGIST~2.CLA|Register_form$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Register_form$2.class" SelfReg="false"/>
+    <ROW File="Register_form3.class" Component_="Login_form1.class" FileName="REGIST~3.CLA|Register_form$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Register_form$3.class" SelfReg="false"/>
+    <ROW File="Register_form.class" Component_="Login_form1.class" FileName="REGIST~4.CLA|Register_form.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Auth\Register_form.class" SelfReg="false"/>
+    <ROW File="Dashboard1.class" Component_="Dashboard1.class" FileName="DASHBO~1.CLA|Dashboard$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard$1.class" SelfReg="false"/>
+    <ROW File="Dashboard2.class" Component_="Dashboard1.class" FileName="DASHBO~2.CLA|Dashboard$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard$2.class" SelfReg="false"/>
+    <ROW File="Dashboard3.class" Component_="Dashboard1.class" FileName="DASHBO~3.CLA|Dashboard$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard$3.class" SelfReg="false"/>
+    <ROW File="Dashboard4.class" Component_="Dashboard1.class" FileName="DASHBO~4.CLA|Dashboard$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard$4.class" SelfReg="false"/>
+    <ROW File="Dashboard.class" Component_="Dashboard1.class" FileName="DASHBO~5.CLA|Dashboard.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard.class" SelfReg="false"/>
+    <ROW File="Dashboard_admin1.class" Component_="Dashboard1.class" FileName="DASHBO~6.CLA|Dashboard_admin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_admin$1.class" SelfReg="false"/>
+    <ROW File="Dashboard_admin2.class" Component_="Dashboard1.class" FileName="DASHBO~7.CLA|Dashboard_admin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_admin$2.class" SelfReg="false"/>
+    <ROW File="Dashboard_admin3.class" Component_="Dashboard1.class" FileName="DASHBO~8.CLA|Dashboard_admin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_admin$3.class" SelfReg="false"/>
+    <ROW File="Dashboard_admin4.class" Component_="Dashboard1.class" FileName="DASHBO~9.CLA|Dashboard_admin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_admin$4.class" SelfReg="false"/>
+    <ROW File="Dashboard_admin5.class" Component_="Dashboard1.class" FileName="DASHB~10.CLA|Dashboard_admin$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_admin$5.class" SelfReg="false"/>
+    <ROW File="Dashboard_admin.class" Component_="Dashboard1.class" FileName="DASHB~11.CLA|Dashboard_admin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_admin.class" SelfReg="false"/>
+    <ROW File="Dashboard_user1.class" Component_="Dashboard1.class" FileName="DASHB~12.CLA|Dashboard_user$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_user$1.class" SelfReg="false"/>
+    <ROW File="Dashboard_user2.class" Component_="Dashboard1.class" FileName="DASHB~13.CLA|Dashboard_user$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_user$2.class" SelfReg="false"/>
+    <ROW File="Dashboard_user3.class" Component_="Dashboard1.class" FileName="DASHB~14.CLA|Dashboard_user$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_user$3.class" SelfReg="false"/>
+    <ROW File="Dashboard_user4.class" Component_="Dashboard1.class" FileName="DASHB~15.CLA|Dashboard_user$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_user$4.class" SelfReg="false"/>
+    <ROW File="Dashboard_user5.class" Component_="Dashboard1.class" FileName="DASHB~16.CLA|Dashboard_user$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_user$5.class" SelfReg="false"/>
+    <ROW File="Dashboard_user.class" Component_="Dashboard1.class" FileName="DASHB~17.CLA|Dashboard_user.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\Dashboard\Dashboard_user.class" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class" Component_="DatabaseConnection.class" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\DB_Conn\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="HashUtil.class" Component_="DatabaseConnection.class" FileName="HASHUT~1.CLA|HashUtil.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\DB_Conn\HashUtil.class" SelfReg="false"/>
+    <ROW File="UserAccessUtil.class" Component_="DatabaseConnection.class" FileName="USERAC~1.CLA|UserAccessUtil.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\DB_Conn\UserAccessUtil.class" SelfReg="false"/>
+    <ROW File="admin.png" Component_="admin.png" FileName="admin.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\img\admin.png" SelfReg="false"/>
+    <ROW File="bakso.png" Component_="admin.png" FileName="bakso.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\img\bakso.png" SelfReg="false"/>
+    <ROW File="BAKSO2.png" Component_="admin.png" FileName="BAKSO2.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\img\BAKSO2.png" SelfReg="false"/>
+    <ROW File="bakso3.png" Component_="admin.png" FileName="bakso3.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\img\bakso3.png" SelfReg="false"/>
+    <ROW File="benner.png" Component_="admin.png" FileName="benner.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\img\benner.png" SelfReg="false"/>
+    <ROW File="org2.png" Component_="admin.png" FileName="org2.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\img\org2.png" SelfReg="false"/>
+    <ROW File="ProjectUAS_DFFFM.class" Component_="ProjectUAS_DFFFM.class" FileName="PROJEC~1.CLA|ProjectUAS_DFFFM.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\projectuas_dfffm\ProjectUAS_DFFFM.class" SelfReg="false"/>
+    <ROW File="List_menu1.class" Component_="List_menu1.class" FileName="LIST_M~1.CLA|List_menu$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\List_menu$1.class" SelfReg="false"/>
+    <ROW File="List_menu2.class" Component_="List_menu1.class" FileName="LIST_M~2.CLA|List_menu$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\List_menu$2.class" SelfReg="false"/>
+    <ROW File="List_menu3.class" Component_="List_menu1.class" FileName="LIST_M~3.CLA|List_menu$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\List_menu$3.class" SelfReg="false"/>
+    <ROW File="List_menu.class" Component_="List_menu1.class" FileName="LIST_M~4.CLA|List_menu.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\List_menu.class" SelfReg="false"/>
+    <ROW File="Orders_detail_user1.class" Component_="List_menu1.class" FileName="ORDERS~1.CLA|Orders_detail_user$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Orders_detail_user$1.class" SelfReg="false"/>
+    <ROW File="Orders_detail_user2.class" Component_="List_menu1.class" FileName="ORDERS~2.CLA|Orders_detail_user$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Orders_detail_user$2.class" SelfReg="false"/>
+    <ROW File="Orders_detail_user.class" Component_="List_menu1.class" FileName="ORDERS~3.CLA|Orders_detail_user.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Orders_detail_user.class" SelfReg="false"/>
+    <ROW File="Pemesanan1.class" Component_="List_menu1.class" FileName="PEMESA~1.CLA|Pemesanan$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$1.class" SelfReg="false"/>
+    <ROW File="Pemesanan2.class" Component_="List_menu1.class" FileName="PEMESA~2.CLA|Pemesanan$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$2.class" SelfReg="false"/>
+    <ROW File="Pemesanan3.class" Component_="List_menu1.class" FileName="PEMESA~3.CLA|Pemesanan$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$3.class" SelfReg="false"/>
+    <ROW File="Pemesanan4.class" Component_="List_menu1.class" FileName="PEMESA~4.CLA|Pemesanan$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$4.class" SelfReg="false"/>
+    <ROW File="Pemesanan5.class" Component_="List_menu1.class" FileName="PEMESA~5.CLA|Pemesanan$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$5.class" SelfReg="false"/>
+    <ROW File="Pemesanan6.class" Component_="List_menu1.class" FileName="PEMESA~6.CLA|Pemesanan$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$6.class" SelfReg="false"/>
+    <ROW File="Pemesanan7.class" Component_="List_menu1.class" FileName="PEMESA~7.CLA|Pemesanan$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$7.class" SelfReg="false"/>
+    <ROW File="PemesananMenuItem.class" Component_="List_menu1.class" FileName="PEMESA~8.CLA|Pemesanan$MenuItem.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$MenuItem.class" SelfReg="false"/>
+    <ROW File="PemesananOrderItem.class" Component_="List_menu1.class" FileName="PEMESA~9.CLA|Pemesanan$OrderItem.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan$OrderItem.class" SelfReg="false"/>
+    <ROW File="Pemesanan.class" Component_="List_menu1.class" FileName="PEMES~10.CLA|Pemesanan.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\User\Pemesanan.class" SelfReg="false"/>
+    <ROW File="build.xml" Component_="build.xml" FileName="build.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build.xml" SelfReg="false"/>
+    <ROW File="AbsoluteLayout.jar" Component_="AbsoluteLayout.jar" FileName="ABSOLU~1.JAR|AbsoluteLayout.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\lib\AbsoluteLayout.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorj9.3.0.jar" Component_="AbsoluteLayout.jar" FileName="MYSQL-~1.JAR|mysql-connector-j-9.3.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\lib\mysql-connector-j-9.3.0.jar" SelfReg="false"/>
+    <ROW File="ProjectUAS_DFFFP.jar" Component_="ProjectUAS_DFFFP.jar" FileName="PROJEC~1.JAR|ProjectUAS_DFFFP.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\ProjectUAS_DFFFP.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="ProjectUAS_DFFFP.jar" FileName="README.TXT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\README.TXT" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="build.xml" FileName="manifest.mf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="manifest.mf" SelfReg="false"/>
+    <ROW File="mysqlconnectorj9.3.0.jar_1" Component_="build.xml" FileName="MYSQL-~1.JAR|mysql-connector-j-9.3.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="mysql-connector-j-9.3.0.jar" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="private.properties" FileName="PRIVAT~1.PRO|private.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="private.properties" FileName="private.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\project.xml" SelfReg="false"/>
+    <ROW File="Add_menu.form" Component_="Add_menu.form" FileName="ADD_ME~1.FOR|Add_menu.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\Add_menu.form" SelfReg="false"/>
+    <ROW File="Add_menu.java" Component_="Add_menu.form" FileName="ADD_ME~1.JAV|Add_menu.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\Add_menu.java" SelfReg="false"/>
+    <ROW File="List_menu_admin.form" Component_="Add_menu.form" FileName="LIST_M~1.FOR|List_menu_admin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\List_menu_admin.form" SelfReg="false"/>
+    <ROW File="List_menu_admin.java" Component_="Add_menu.form" FileName="LIST_M~1.JAV|List_menu_admin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\List_menu_admin.java" SelfReg="false"/>
+    <ROW File="Orders_detail.form" Component_="Add_menu.form" FileName="ORDERS~1.FOR|Orders_detail.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\Orders_detail.form" SelfReg="false"/>
+    <ROW File="Orders_detail.java" Component_="Add_menu.form" FileName="ORDERS~1.JAV|Orders_detail.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\Orders_detail.java" SelfReg="false"/>
+    <ROW File="Update_menu.form" Component_="Add_menu.form" FileName="UPDATE~1.FOR|Update_menu.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\Update_menu.form" SelfReg="false"/>
+    <ROW File="Update_menu.java" Component_="Add_menu.form" FileName="UPDATE~1.JAV|Update_menu.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Admin\Update_menu.java" SelfReg="false"/>
+    <ROW File="Login_form.form" Component_="Login_form.form" FileName="LOGIN_~1.FOR|Login_form.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Auth\Login_form.form" SelfReg="false"/>
+    <ROW File="Login_form.java" Component_="Login_form.form" FileName="LOGIN_~1.JAV|Login_form.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Auth\Login_form.java" SelfReg="false"/>
+    <ROW File="Register_form.form" Component_="Login_form.form" FileName="REGIST~1.FOR|Register_form.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Auth\Register_form.form" SelfReg="false"/>
+    <ROW File="Register_form.java" Component_="Login_form.form" FileName="REGIST~1.JAV|Register_form.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Auth\Register_form.java" SelfReg="false"/>
+    <ROW File="Dashboard.form" Component_="Dashboard.form" FileName="DASHBO~1.FOR|Dashboard.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Dashboard\Dashboard.form" SelfReg="false"/>
+    <ROW File="Dashboard.java" Component_="Dashboard.form" FileName="DASHBO~1.JAV|Dashboard.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Dashboard\Dashboard.java" SelfReg="false"/>
+    <ROW File="Dashboard_admin.form" Component_="Dashboard.form" FileName="DASHBO~2.FOR|Dashboard_admin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Dashboard\Dashboard_admin.form" SelfReg="false"/>
+    <ROW File="Dashboard_admin.java" Component_="Dashboard.form" FileName="DASHBO~2.JAV|Dashboard_admin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Dashboard\Dashboard_admin.java" SelfReg="false"/>
+    <ROW File="Dashboard_user.form" Component_="Dashboard.form" FileName="DASHBO~3.FOR|Dashboard_user.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Dashboard\Dashboard_user.form" SelfReg="false"/>
+    <ROW File="Dashboard_user.java" Component_="Dashboard.form" FileName="DASHBO~3.JAV|Dashboard_user.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\Dashboard\Dashboard_user.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java" Component_="DatabaseConnection.java" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\DB_Conn\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="HashUtil.java" Component_="DatabaseConnection.java" FileName="HASHUT~1.JAV|HashUtil.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\DB_Conn\HashUtil.java" SelfReg="false"/>
+    <ROW File="UserAccessUtil.java" Component_="DatabaseConnection.java" FileName="USERAC~1.JAV|UserAccessUtil.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\DB_Conn\UserAccessUtil.java" SelfReg="false"/>
+    <ROW File="admin.png_2" Component_="admin.png_2" FileName="admin.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\img\admin.png" SelfReg="false"/>
+    <ROW File="bakso.png_2" Component_="admin.png_2" FileName="bakso.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\img\bakso.png" SelfReg="false"/>
+    <ROW File="BAKSO2.png_2" Component_="admin.png_2" FileName="BAKSO2.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\img\BAKSO2.png" SelfReg="false"/>
+    <ROW File="bakso3.png_2" Component_="admin.png_2" FileName="bakso3.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\img\bakso3.png" SelfReg="false"/>
+    <ROW File="benner.png_2" Component_="admin.png_2" FileName="benner.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\img\benner.png" SelfReg="false"/>
+    <ROW File="org2.png_2" Component_="admin.png_2" FileName="org2.png" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\img\org2.png" SelfReg="false"/>
+    <ROW File="ProjectUAS_DFFFM.java" Component_="ProjectUAS_DFFFM.java" FileName="PROJEC~1.JAV|ProjectUAS_DFFFM.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\projectuas_dfffm\ProjectUAS_DFFFM.java" SelfReg="false"/>
+    <ROW File="List_menu.form" Component_="List_menu.form" FileName="LIST_M~1.FOR|List_menu.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\User\List_menu.form" SelfReg="false"/>
+    <ROW File="List_menu.java" Component_="List_menu.form" FileName="LIST_M~1.JAV|List_menu.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\User\List_menu.java" SelfReg="false"/>
+    <ROW File="Orders_detail_user.form" Component_="List_menu.form" FileName="ORDERS~1.FOR|Orders_detail_user.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\User\Orders_detail_user.form" SelfReg="false"/>
+    <ROW File="Orders_detail_user.java" Component_="List_menu.form" FileName="ORDERS~1.JAV|Orders_detail_user.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\User\Orders_detail_user.java" SelfReg="false"/>
+    <ROW File="Pemesanan.form" Component_="List_menu.form" FileName="PEMESA~1.FOR|Pemesanan.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\User\Pemesanan.form" SelfReg="false"/>
+    <ROW File="Pemesanan.java" Component_="List_menu.form" FileName="PEMESA~1.JAV|Pemesanan.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\User\Pemesanan.java" SelfReg="false"/>
+    <ROW File="demo.exe" Component_="demo.exe" FileName="demo.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="Add_menu1.class"/>
+    <ROW Feature_="MainFeature" Component_="Login_form1.class"/>
+    <ROW Feature_="MainFeature" Component_="Dashboard1.class"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.class"/>
+    <ROW Feature_="MainFeature" Component_="admin.png"/>
+    <ROW Feature_="MainFeature" Component_="ProjectUAS_DFFFM.class"/>
+    <ROW Feature_="MainFeature" Component_="List_menu1.class"/>
+    <ROW Feature_="MainFeature" Component_="build.xml"/>
+    <ROW Feature_="MainFeature" Component_="AbsoluteLayout.jar"/>
+    <ROW Feature_="MainFeature" Component_="ProjectUAS_DFFFP.jar"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="private.properties"/>
+    <ROW Feature_="MainFeature" Component_="Add_menu.form"/>
+    <ROW Feature_="MainFeature" Component_="Login_form.form"/>
+    <ROW Feature_="MainFeature" Component_="Dashboard.form"/>
+    <ROW Feature_="MainFeature" Component_="DatabaseConnection.java"/>
+    <ROW Feature_="MainFeature" Component_="admin.png_2"/>
+    <ROW Feature_="MainFeature" Component_="ProjectUAS_DFFFM.java"/>
+    <ROW Feature_="MainFeature" Component_="List_menu.form"/>
+    <ROW Feature_="MainFeature" Component_="demo.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="demo.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="demo.exe"/>
+    <ROW IniFile="ClassPath" FileName="demo.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[ProjectUAS_DFFFP_Dir];[#mysqlconnectorj9.3.0.jar_1];" Action="0" Component_="demo.exe"/>
+    <ROW IniFile="EmbeddedJar" FileName="demo.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="demo.exe"/>
+    <ROW IniFile="FailureCheck" FileName="demo.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="demo.exe"/>
+    <ROW IniFile="MainClass" FileName="demo.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="Dashboard.Dashboard" Action="0" Component_="demo.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="demo.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="demo.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="demo.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="demo.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="demo.exe" Launcher="demo.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" IconPath="..\..\..\..\Downloads\meal_lunch_dinner_eat_food_noodle_icon_212595.ico" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#demo.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="2" Platform64="true" EmbJarPath="dist\ProjectUAS_DFFFP.jar" HasEmbJar="EmbeddedJar"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="demo" Directory_="SHORTCUTDIR" Name="demo" Component_="demo.exe" Target="[#demo.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
